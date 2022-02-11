@@ -23,28 +23,28 @@ int main()
     		lib.insert(inp[i]);
     		rev[n-i+1]=inp[i];
     		reverse(all(rev[n-i+1]));
-    		if(inp[i].size()==1) flag=1;
+    		if(inp[i].size()==1 || inp[i]==rev[n-i+1]) flag=1;
     	}
     	if(flag){
     		cout<<"YES\n";
     		continue;
     	}
     	for(i=1;i<=n;i++){
+    		lib.erase(lib.find(inp[n-i+1]));
     		if(lib.find(rev[i])!=lib.end()) flag=1;
     		else if(rev[i].size()==2){
-    			auto si = lib.lower_bound(rev[i]);
-    			if(si==lib.end()) continue;
-    			else t=*si;
-    			if(t[0]==rev[i][0] && t[1]==rev[i][1]) flag=1;
+                for(char a='a';a<='z';a++)
+                    if(lib.find(rev[i]+a)!=lib.end()) flag=1;
     		}
     		else if(rev[i].size()==3){
     			if(lib.find(rev[i].substr(0,2))!=lib.end()) flag=1;
     		}
     		if(flag) break;
-    		lib.erase(inp[n-i+1]);
     	}
     	if(flag) cout<<"YES\n";
     	else cout<<"NO\n";
     }
     return 0;
 }
+//multiset에서 erase는 같은 원소를 모두 지운다.
+//ab가 여러 개 있다면 erase("ab")를 하면 모든 ab가 삭제된다.

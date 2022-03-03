@@ -4,7 +4,7 @@ using ll = long long;
 using pii = pair<int, int>;
 const int inf=1e9+3;
 #define all(x) (x).begin(),(x).end()
-#define sync() {ios_base::sync_with_stdio(0); cin.tie(0);cout.tie(0);} //do not use 
+#define sync() {ios_base::sync_with_stdio(0); cin.tie(0);cout.tie(0);} //do not use
 int n,m;
 int cnt[256];
 int main()
@@ -16,11 +16,12 @@ int main()
 		string str;
 		cin>>str;
 		int flag=0;
+		memset(cnt,0,sizeof(cnt));
 		for(char ch : str){
 			if('a'<=ch && ch <='z')cnt[ch-'a']++;
 			else{
-				if(cnt[ch-'a']<=0) flag=1;
-				cnt[ch-'a']++;
+				if(cnt[ch-'A']<=0) flag=1;
+				cnt[ch-'A']++;
 			}
 		}
 		if(!flag) cout<<"YES\n";

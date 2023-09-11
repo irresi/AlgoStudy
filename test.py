@@ -1,0 +1,1 @@
+print("c" in "codeforces" and "f" in "codeforces")

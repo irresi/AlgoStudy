@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define all(x) (x).begin(),(x).end()
 #define int ll
+#define all(x) (x).begin(),(x).end()
 using ll = long long;
-using pii = pair<ll, ll>;
+using pii = pair<int, int>;
 int n,m;
 void solve(){
     int i,j;

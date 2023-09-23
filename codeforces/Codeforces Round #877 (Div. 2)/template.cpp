@@ -2,8 +2,8 @@
 using namespace std;
 #define all(x) (x).begin(),(x).end()
 #define int ll
+using pii = pair<int, int>;
 using ll = long long;
-using pii = pair<ll, ll>;
 int n,m;
 void solve(){
     int i,j;

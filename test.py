@@ -1,1 +1,1 @@
-print("c" in "codeforces" and "f" in "codeforces")
+print("tested")

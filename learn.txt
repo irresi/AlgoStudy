@@ -1,2 +1,11 @@
 https://www.youtube.com/watch?v=JXTVOyQpSGM
 https://codeforces.com/blog/entry/15801
+
+vscode setting
+https://reo91004.tistory.com/55
+https://stackoverflow.com/questions/46111834/format-curly-braces-on-same-line-in-c-vscode
+
+icpc에서는 vscode를 사용할 수는 있는데 확장 사용이 불가능함.
+https://codeforces.com/contest/1879/problem/E
+https://www.youtube.com/watch?v=ePZEkbbf3fc 을참고해서 geany를 쓰거나
+clion을 사용하는 환경을 휴가 때 구축하고 지금은 vscode with no extension으로 쓰자.

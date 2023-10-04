@@ -2,7 +2,6 @@
 using namespace std;
 #define all(x) (x).begin(),(x).end()
 #define int ll
-#define NO {cout<<"NO\n"; return;}
 using ll = long long;
 using pii = pair<ll, ll>;
 int n,m;
